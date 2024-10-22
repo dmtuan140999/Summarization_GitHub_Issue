@@ -5,7 +5,6 @@ import torch
 model = AutoModelForSeq2SeqLM.from_pretrained("minhtuan7akp/bart_github_summarization")
 tokenizer = AutoTokenizer.from_pretrained("minhtuan7akp/bart_github_summarization")
 
-
 # Thiết lập thiết bị
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 model.to(device)
