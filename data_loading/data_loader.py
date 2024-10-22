@@ -21,7 +21,7 @@ def load_data(data_path: str, test_size=0.2):
     return full_dataset_dict
 
 
-def preprocess_function(examples, tokenizer):
+def preprocess_function(examples):
     inputs = ["Summary of the following GitHub issue: " + doc for doc in examples["body"]]
     model_inputs = tokenizer(inputs, max_length=1024, truncation=True, padding="max_length", return_tensors='pt')
     labels = tokenizer(examples["issue_title"], max_length=256, truncation=True, padding="max_length",
