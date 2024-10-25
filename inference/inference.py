@@ -19,4 +19,6 @@ def summary(sentence):
     )
     line = tokenizer.decode(outputs[0], skip_special_tokens=True, clean_up_tokenization_spaces=True)
     return line
-print(summary("Add value ranges to table formats on that page"))
+print("Input: hi, when i release it seems has a release late.. if i deploy the current folder has the good symlink to realeases/<release_id> but the code executed continue to be this of the prev release, if i execut php bin/console cache:clear -e prod to clear the cache, the cache is cleared but the code executed is always the one of the prev release. if i remove all folders of releases directory except the last one, everything is cool, the code executed is the good one... anybody have the same problem ? i use the symfony3 recipe. thanks :")
+print("Output: ",summary('hi, when i release it seems has a release late.. if i deploy the current folder has the good symlink to realeases/<release_id> but the code executed continue to be this of the prev release, if i execut php bin/console cache:clear -e prod to clear the cache, the cache is cleared but the code executed is always the one of the prev release. if i remove all folders of releases directory except the last one, everything is cool, the code executed is the good one... anybody have the same problem ? i use the symfony3 recipe. thanks :'
+))
